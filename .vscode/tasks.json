@@ -1,0 +1,30 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Solution",
+            "type": "shell",
+            "command": "rollup src/solution.ts -c ../../rollup.config.js --dir lib",
+            "problemMatcher": [],
+            "options": {
+                "cwd": "${input:dir}"
+            }
+        },
+        {
+            "label": "Watch Solution",
+            "type": "shell",
+            "command": "rollup src/solution.ts -w -c ../../rollup.config.js --dir lib",
+            "problemMatcher": [],
+            "options": {
+                "cwd": "${input:dir}"
+            }
+        },
+    ],
+    "inputs": [
+        {
+            "id": "dir",
+            "description": "The solution directory",
+            "type": "promptString"
+        },
+    ]
+}
