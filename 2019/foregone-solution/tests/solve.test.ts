@@ -9,6 +9,8 @@ function checkSolution(num: bigint) {
     }
 }
 
-test('sample case 1', checkSolution(4n));
+describe('sample cases', () => {
+    test('1', checkSolution(4n));
 
-test('sample case 2', checkSolution(940n));
+    test('2', checkSolution(940n));
+});
