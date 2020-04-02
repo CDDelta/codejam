@@ -1,4 +1,5 @@
 import { StdinLineStream } from 'stdin-line';
+import solve from './solve';
 
 async function main() {
     let inputStream = new StdinLineStream();
@@ -8,18 +9,8 @@ async function main() {
         const line = await inputStream.getLine();
         const num = BigInt(line);
 
-        let intA = 1n;
-        const sNum = (num - intA).toString().split('').reverse();
-
-        for (let i = 0; i <= sNum.length - 1; i++) {
-            const digit = sNum[i];
-            if (digit === '4') {
-                intA += 10n ** BigInt(i);
-            }
-        }
-
-        const intB = num - intA;
-        console.log(`Case #${caseNum}: ${intA} ${intB}`);
+        const { a, b } = solve(num);
+        console.log(`Case #${caseNum}: ${a} ${b}`);
     }
 
     inputStream.close();

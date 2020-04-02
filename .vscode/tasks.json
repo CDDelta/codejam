@@ -4,7 +4,7 @@
         {
             "label": "Build Solution",
             "type": "shell",
-            "command": "rollup src/solution.ts -c ../../rollup.config.js --dir lib",
+            "command": "rollup -c ../../rollup.config.js --dir lib",
             "problemMatcher": [],
             "options": {
                 "cwd": "${input:dir}"
@@ -13,7 +13,7 @@
         {
             "label": "Watch Solution",
             "type": "shell",
-            "command": "rollup src/solution.ts -w -c ../../rollup.config.js --dir lib",
+            "command": "rollup -w -c ../../rollup.config.js --dir lib",
             "problemMatcher": [],
             "options": {
                 "cwd": "${input:dir}"

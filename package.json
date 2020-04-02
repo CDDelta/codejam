@@ -1,12 +1,20 @@
 {
+    "scripts": {
+        "test": "jest"
+    },
     "dependencies": {
         "stdin-line": "0.0.4"
     },
     "devDependencies": {
+        "@babel/core": "^7.9.0",
+        "@babel/preset-env": "^7.9.0",
+        "@babel/preset-typescript": "^7.9.0",
         "@rollup/plugin-commonjs": "^11.0.2",
         "@rollup/plugin-node-resolve": "^7.1.1",
         "@rollup/plugin-run": "^1.2.1",
         "@rollup/plugin-typescript": "^4.0.0",
+        "@types/jest": "^25.1.4",
+        "babel-jest": "^25.2.4",
         "tslib": "^1.11.1",
         "typescript": "^3.8.3"
     }
