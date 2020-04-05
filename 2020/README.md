@@ -2,8 +2,8 @@
 
 ## Qualification Round
 
-- [Vesitgium](./vestigium/src/solution.ts)
-- [Nesting Depth](./nesting-depth/src/solution.ts)
-- [Parenting Partnering Returns](./parenting-partnering-returns/src/solution.ts)
-- [ESAb ATAd](./vestigium/src/solution.ts) (Incomplete)
-- [Incidium](./incidium/src/solution.ts) (Incomplete)
+- [Vesitgium](./vestigium/src/solve.ts)
+- [Nesting Depth](./nesting-depth/src/solve.ts)
+- [Parenting Partnering Returns](./parenting-partnering-returns/src/solve.ts)
+- [ESAb ATAd](./vestigium/src/solve.ts) (Incomplete)
+- [Incidium](./incidium/src/solve.ts) (Incomplete)
